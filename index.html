@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <title>好工作快報</title>
 
@@ -15,156 +15,182 @@ box-sizing:border-box;
 
 body{
 font-family:"Microsoft JhengHei",sans-serif;
-background:#eef7ff;
-color:#1a1a1a;
+background:#f5fff8;
+color:#1f2937;
 max-width:430px;
 margin:auto;
+line-height:1.7;
 }
 
 .hero{
-background:linear-gradient(180deg,#1565c0,#42a5f5);
-padding:70px 24px;
+background:linear-gradient(180deg,#06c755,#00a63e);
+padding:60px 24px 50px;
 text-align:center;
 color:white;
+position:relative;
+overflow:hidden;
+}
+
+.hero::after{
+content:"";
+position:absolute;
+width:220px;
+height:220px;
+background:rgba(255,255,255,0.08);
+border-radius:50%;
+top:-60px;
+right:-80px;
 }
 
 .top{
 font-size:14px;
-margin-bottom:20px;
 font-weight:bold;
+margin-bottom:20px;
+position:relative;
+z-index:2;
 }
 
 .badge{
 display:inline-block;
-background:rgba(255,255,255,0.18);
-padding:10px 20px;
+background:rgba(255,255,255,0.15);
+padding:10px 18px;
 border-radius:999px;
-margin-bottom:30px;
 font-size:14px;
+margin-bottom:24px;
 backdrop-filter:blur(8px);
+position:relative;
+z-index:2;
 }
 
 .hero h1{
-font-size:54px;
-margin-bottom:20px;
-font-weight:bold;
+font-size:42px;
+margin-bottom:18px;
+position:relative;
+z-index:2;
 }
 
-.sub{
-font-size:18px;
-line-height:1.8;
-margin-bottom:30px;
+.hero p{
+font-size:19px;
+line-height:1.9;
+position:relative;
+z-index:2;
 }
 
-.hero-img{
+.hero img{
 width:100%;
-border-radius:24px;
-box-shadow:0 10px 30px rgba(0,0,0,0.2);
+margin-top:28px;
+border-radius:28px;
+box-shadow:0 12px 30px rgba(0,0,0,0.2);
+position:relative;
+z-index:2;
+}
+
+.line-btn{
+display:block;
+background:white;
+color:#06c755;
+font-size:22px;
+font-weight:bold;
+text-decoration:none;
+padding:18px;
+border-radius:999px;
+margin-top:30px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+position:relative;
+z-index:2;
 }
 
 .section{
-padding:40px 24px;
-background:white;
-margin-bottom:16px;
-border-radius:24px 24px 0 0;
+padding:48px 24px;
 }
 
-.section-title{
-font-size:32px;
+.title{
+font-size:30px;
 font-weight:bold;
-margin-bottom:16px;
 text-align:center;
-color:#1565c0;
+margin-bottom:14px;
+color:#00a63e;
 }
 
-.section-sub{
-font-size:18px;
+.subtitle{
 text-align:center;
+font-size:17px;
 color:#666;
 margin-bottom:30px;
 line-height:1.8;
 }
 
-.cards{
+.problem-box{
+background:white;
+border-radius:24px;
 padding:24px;
+margin-bottom:18px;
+box-shadow:0 4px 16px rgba(0,0,0,0.06);
+}
+
+.problem-box h3{
+font-size:22px;
+margin-bottom:10px;
+color:#00a63e;
+}
+
+.problem-box p{
+font-size:17px;
+color:#444;
+line-height:1.8;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:16px;
 }
 
 .card{
 background:white;
-padding:24px;
 border-radius:22px;
-margin-bottom:20px;
-box-shadow:0 6px 18px rgba(21,101,192,0.08);
-border:1px solid #d9ecff;
+padding:24px 18px;
+text-align:center;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
 }
 
-.card h3{
-font-size:24px;
+.icon{
+font-size:34px;
 margin-bottom:12px;
-color:#1565c0;
+}
+
+.card h4{
+font-size:20px;
+margin-bottom:8px;
+color:#00a63e;
 }
 
 .card p{
-font-size:18px;
-line-height:1.8;
-color:#444;
+font-size:15px;
+color:#555;
+line-height:1.7;
 }
 
-.line-btn{
-display:block;
-background:#06c755;
-color:white;
-text-align:center;
-padding:18px;
-border-radius:999px;
-font-size:22px;
-font-weight:bold;
-text-decoration:none;
-margin-top:30px;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.line-btn:hover{
-transform:translateY(-2px);
-}
-
-.target{
-padding:40px 24px;
-background:white;
-border-radius:24px;
-width:100%;
-margin:16px 0;
-}
-
-.target ul{
-padding-left:24px;
-line-height:2.2;
-font-size:18px;
-color:#444;
-}
-
-.flow{
-padding:40px 24px;
-background:#f4f9ff;
+.steps{
+margin-top:20px;
 }
 
 .step{
 display:flex;
 gap:16px;
 margin-bottom:24px;
-align-items:flex-start;
 background:white;
-padding:20px;
-border-radius:20px;
-box-shadow:0 4px 12px rgba(0,0,0,0.05);
+padding:22px;
+border-radius:22px;
+box-shadow:0 4px 14px rgba(0,0,0,0.06);
+align-items:flex-start;
 }
 
 .number{
 width:42px;
 height:42px;
 border-radius:50%;
-background:#1e88e5;
+background:#06c755;
 color:white;
 display:flex;
 align-items:center;
@@ -174,57 +200,70 @@ font-size:20px;
 flex-shrink:0;
 }
 
-.step-text h4{
-font-size:22px;
-margin-bottom:8px;
-color:#1565c0;
+.step h4{
+font-size:20px;
+margin-bottom:6px;
+color:#00a63e;
 }
 
-.step-text p{
-font-size:17px;
-line-height:1.7;
+.step p{
+font-size:16px;
 color:#555;
+line-height:1.7;
 }
 
-.footer{
-background:#1565c0;
-color:white;
+.cta{
+background:linear-gradient(180deg,#00a63e,#008f35);
+padding:54px 24px;
 text-align:center;
-padding:50px 24px;
+color:white;
 }
 
-.footer h2{
-font-size:36px;
-margin-bottom:20px;
+.cta h2{
+font-size:34px;
+margin-bottom:18px;
 }
 
-.footer p{
+.cta p{
 font-size:18px;
-line-height:1.8;
+line-height:1.9;
 margin-bottom:30px;
 }
 
 .footer-btn{
 display:inline-block;
-background:#06c755;
-color:white;
-padding:18px 36px;
+background:white;
+color:#06c755;
+padding:18px 34px;
 border-radius:999px;
 font-size:22px;
 font-weight:bold;
 text-decoration:none;
-box-shadow:0 8px 20px rgba(0,0,0,0.15);
-transition:0.3s;
-}
-
-.footer-btn:hover{
-transform:translateY(-2px);
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
 }
 
 .copy{
-margin-top:30px;
-font-size:14px;
+margin-top:28px;
+font-size:13px;
 opacity:0.8;
+}
+
+.floating-line{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#06c755;
+color:white;
+width:62px;
+height:62px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+z-index:999;
 }
 </style>
 </head>
@@ -233,160 +272,170 @@ opacity:0.8;
 
 <div class="hero">
 
-  <div class="top">
-    📢 好工作快報・快速媒合工作
-  </div>
+<div class="top">
+📢 好工作快報｜快速媒合工作
+</div>
 
-  <div class="badge">
-    專注媒合合適工作與人才
-  </div>
+<div class="badge">
+免費媒合・專人協助・快速上工
+</div>
 
-  <h1>
-    好工作快報
-  </h1>
+<h1>
+找到適合你的工作
+</h1>
 
-  <p style="
-    font-size:20px;
-    color:#ffffff;
-    margin-top:15px;
-    line-height:1.8;
-    font-weight:500;
-  ">
-    讓工作不只是收入<br>
-    而是更好的生活選擇
-  </p>
+<p>
+兼職、轉職、二度就業<br>
+專人協助快速安排
+</p>
 
-  <img src="photo_2026-05-13_18-06-59.jpg"
-       style="
-       width:100%;
-       border-radius:24px;
-       margin-top:28px;
-       box-shadow:0 12px 35px rgba(0,0,0,0.25);
-  ">
+<img src="photo_2026-05-13_18-06-59.jpg">
 
-  <div class="sub" style="
-    margin-top:28px;
-    line-height:2;
-    font-size:20px;
-  ">
-    ✔ 想轉職的人<br>
-    ✔ 兼職需求者<br>
-    ✔ 二度就業
-  </div>
-
-  <a class="line-btn"
-     href="https://line.me/ti/p/D_PtP6fySH"
-     target="_blank">
-
-     立即加入 LINE 諮詢
-
-  </a>
+<a class="line-btn"
+href="https://line.me/ti/p/D_PtP6fySH"
+target="_blank">
+立即加入 LINE 諮詢
+</a>
 
 </div>
 
-<div class="features">
+<div class="section">
 
-  <div class="section-title">
-    我們提供四大優勢
-  </div>
+<div class="title">
+你是不是也有這些困擾？
+</div>
 
-  <div class="cards">
+<div class="subtitle">
+找工作沒方向？<br>
+想兼職卻找不到適合機會？
+</div>
 
-    <div class="card">
-      <h3>彈性</h3>
-      <p>多種工作模式<br>自由安排時間</p>
-    </div>
+<div class="problem-box">
+<h3>✔ 想轉職</h3>
+<p>
+工作不穩定、薪資不理想，
+想重新找更好的機會。
+</p>
+</div>
 
-    <div class="card">
-      <h3>精準</h3>
-      <p>依照需求媒合<br>快速找到工作</p>
-    </div>
+<div class="problem-box">
+<h3>✔ 想增加收入</h3>
+<p>
+想找兼職、彈性工作，
+增加生活收入。
+</p>
+</div>
 
-    <div class="card">
-      <h3>積極</h3>
-      <p>專人快速協助<br>提高錄取效率</p>
-    </div>
-
-    <div class="card">
-      <h3>多元</h3>
-      <p>多種職缺選擇<br>兼職正職都有</p>
-    </div>
-
-  </div>
+<div class="problem-box">
+<h3>✔ 二度就業</h3>
+<p>
+重新回到職場，
+需要有人協助媒合。
+</p>
+</div>
 
 </div>
 
-<div class="target">
+<div class="section">
 
-  <div class="section-title">
-    適合哪些人？
-  </div>
+<div class="title">
+我們如何幫你
+</div>
 
-  <ul>
-    <li>想轉職的人</li>
-    <li>兼職需求者</li>
-    <li>二度就業者</li>
-    <li>想增加收入的人</li>
-  </ul>
+<div class="grid">
+
+<div class="card">
+<div class="icon">⚡</div>
+<h4>快速媒合</h4>
+<p>依條件安排適合工作</p>
+</div>
+
+<div class="card">
+<div class="icon">💬</div>
+<h4>專人協助</h4>
+<p>一對一協助找工作</p>
+</div>
+
+<div class="card">
+<div class="icon">🕒</div>
+<h4>時間彈性</h4>
+<p>兼職正職都能安排</p>
+</div>
+
+<div class="card">
+<div class="icon">🎯</div>
+<h4>精準推薦</h4>
+<p>快速找到適合職缺</p>
+</div>
 
 </div>
 
-<div class="flow">
+</div>
 
-  <div class="section-title">
-    申請流程超簡單
-  </div>
+<div class="section">
 
-  <div class="step">
-    <div class="number">1</div>
-    <div class="step-text">
-      <h4>加入 LINE</h4>
-      <p>直接聯繫專員</p>
-    </div>
-  </div>
+<div class="title">
+3 步驟快速開始
+</div>
 
-  <div class="step">
-    <div class="number">2</div>
-    <div class="step-text">
-      <h4>了解需求</h4>
-      <p>依照條件安排工作</p>
-    </div>
-  </div>
+<div class="steps">
 
-  <div class="step">
-    <div class="number">3</div>
-    <div class="step-text">
-      <h4>快速媒合</h4>
-      <p>專人協助上工</p>
-    </div>
-  </div>
+<div class="step">
+<div class="number">1</div>
+<div>
+<h4>加入 LINE</h4>
+<p>直接聯繫專員諮詢</p>
+</div>
+</div>
+
+<div class="step">
+<div class="number">2</div>
+<div>
+<h4>了解需求</h4>
+<p>依照條件安排工作機會</p>
+</div>
+</div>
+
+<div class="step">
+<div class="number">3</div>
+<div>
+<h4>快速媒合</h4>
+<p>專人協助安排上工</p>
+</div>
+</div>
 
 </div>
 
-<div class="footer">
+</div>
 
-  <h2>
-    立即加入好工作快報
-  </h2>
+<div class="cta">
 
-  <p>
-    專員一對一協助<br>
-    免費快速媒合工作
-  </p>
+<h2>
+立即加入好工作快報
+</h2>
 
-  <a class="footer-btn"
-     href="https://line.me/ti/p/D_PtP6fySH"
-     target="_blank">
+<p>
+免費媒合工作機會<br>
+快速安排適合職缺
+</p>
 
-     立即加入 LINE 諮詢
+<a class="footer-btn"
+href="https://line.me/ti/p/D_PtP6fySH"
+target="_blank">
+加入 LINE 諮詢
+</a>
 
-  </a>
-
-  <div class="copy">
-    © 好工作快報
-  </div>
+<div class="copy">
+© 好工作快報
+</div>
 
 </div>
+
+<a class="floating-line"
+href="https://line.me/ti/p/D_PtP6fySH"
+target="_blank">
+💬
+</a>
 
 </body>
 </html>
